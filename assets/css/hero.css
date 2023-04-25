@@ -1,0 +1,33 @@
+.hero {
+    background-image: url("https://via.placeholder.com/1200x600");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .call-to-action {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color .2s ease-in-out;
+  }
+  
+  .call-to-action:hover {
+    background-color: #666;
+  }
+  
