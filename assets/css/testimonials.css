@@ -1,0 +1,39 @@
+/*testimonials.css */
+.testimonials {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  blockquote {
+    font-size: 1.25rem;
+    color: #666;
+    margin: 1rem;
+    position: relative;
+  }
+  
+  blockquote img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  blockquote p {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  blockquote cite {
+    font-size: 1rem;
+    font-style: normal;
+    color: #333;
+  }
+  

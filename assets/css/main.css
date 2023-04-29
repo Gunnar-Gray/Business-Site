@@ -1,12 +1,32 @@
 /* main.css */
-/* Path: assets\css\main.css */
-/* Typography */
+/* Main styling for the body element */
 body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for light theme */
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Styling for dark theme */
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Container for centering and limiting the width of content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial', sans-serif;
     margin-bottom: 1rem;

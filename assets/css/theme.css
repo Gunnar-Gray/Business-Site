@@ -1,47 +1,54 @@
+/* Set font-family, line-height and transition for background-color */
 body {
-    font-family: 'Arial', sans-serif;
-    transition: background-color 0.3s ease;
-  }
-  
-  .light-theme {
-    background-color: #ffffff;
-    color: #333333;
-  }
-  
-  .dark-theme {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  #theme-toggle {
-    background-color: #333333;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: -9px 20px;
-    cursor: pointer;
-  }
-  /* Colors */
+  font-family: Arial, sans-serif;
+  transition: background-color .3s;
+  line-height: 1.6;
+}
+
+/* Set a maximum width for the content container, center it, and set padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Light theme styling: set background color to white and text color to dark grey */
 .light-theme {
-    --primary-color: #0056b3;
-    --secondary-color: #f08a5d;
-    --text-color: #333333;
-    --background-color: #ffffff;
-  }
-  
-  .dark-theme {
-    --primary-color: #1c7ef8;
-    --secondary-color: #f39988;
-    --text-color: #ffffff;
-    --background-color: #333333;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark theme styling: set background color to dark grey and text color to white */
+.dark-theme {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+/* Style for theme toggle button */
+#theme-toggle {
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -9px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  /* Add smooth transition for background-color and color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style for nav links */
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  /* Add smooth transition for color on hover */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Style for nav links on hover */
+nav ul li a:hover {
+  color: #343434;
+}

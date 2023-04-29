@@ -1,4 +1,4 @@
-
+/* Style for hero section */
 .hero {
     position: relative;
     text-align: center;
@@ -20,3 +20,21 @@
     z-index: 1;
   }
   
+  /* Style for intro section */
+.intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Style for intro header */
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+/* Style for intro paragraph */
+.intro p {
+  font-size: 1.25rem;
+  color: inherit;
+}

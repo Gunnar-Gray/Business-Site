@@ -1,0 +1,16 @@
+/* Add transitions to the section elements */
+section {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Update section styles for light and dark modes */
+  .light-theme section {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .dark-theme section {
+    background-color: #444;
+    color: #fff;
+  }
+  
