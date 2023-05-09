@@ -1,12 +1,50 @@
-.call-to-action-section {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .call-to-action-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
+/* call-to-action.css */
+.call-to-action {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.call-to-action:hover {
+  background-color: #3F9142;
+  color: #f1f1f1;
+}
+
+/* Call to action section in main content */
+.main .call-to-action-section {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  transition: background-color 0.3s; /* Add transition for smoother background color changes */
+}
+
+.main .call-to-action-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update color and background for dark-theme */
+.dark-theme .call-to-action {
+  background-color: #3F9142;
+  color: #f1f1f1;
+}
+
+.dark-theme .call-to-action:hover {
+  background-color: #36803A;
+  color: #ffffff;
+}
+
+.dark-theme .main .call-to-action-section {
+  background-color: #444;
+}
+
+.dark-theme .main .call-to-action-section h2 {
+  color: #f1f1f1;
+}

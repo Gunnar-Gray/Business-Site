@@ -1,40 +1,43 @@
+/* Style for intro section */
+.intro {
+  padding: 2rem;
+  text-align: center;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: inherit;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+/* Update color for dark-theme */
+.dark-theme .intro h1, .dark-theme .intro p {
+  color: #f1f1f1;
+}
+
 /* Style for hero section */
 .hero {
-    position: relative;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .hero h1, .hero p, .hero .call-to-action {
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Style for intro section */
-.intro {
+  position: relative;
   text-align: center;
   padding: 2rem;
 }
 
-/* Style for intro header */
-.intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: inherit;
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-/* Style for intro paragraph */
-.intro p {
-  font-size: 1.25rem;
-  color: inherit;
+.hero h1, .hero p, .hero .call-to-action {
+  position: relative;
+  z-index: 1;
 }

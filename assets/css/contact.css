@@ -1,1 +1,59 @@
 /* contact.css */
+
+/* Contact section */
+.contact {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s; /* Add transition for smoother background color changes */
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s; /* Add transition for smoother border color changes */
+}
+
+.contact form button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smoother background and color changes */
+}
+
+/* Update color, background, and border for dark-theme */
+.dark-theme .contact {
+  background-color: #444;
+}
+
+.dark-theme .contact h2 {
+  color: #f1f1f1;
+}
+
+.dark-theme .contact form input,
+.dark-theme .contact form textarea {
+  border-color: #666;
+}
+
+.dark-theme .contact form button {
+  background-color: #f1f1f1;
+  color: #333;
+}
+

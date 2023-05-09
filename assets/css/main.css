@@ -1,49 +1,63 @@
-/* main.css */
-/* Main styling for the body element */
-body {
-  font-family: Arial, sans-serif;
+/* Imports the necessary CSS files for the webpage */
+@import url("header.css");
+@import url("footer.css");
+@import url("theme.css");
+@import url("hero.css");
+@import url("portfolio.css");
+@import url("testimonials.css");
+@import url("contact.css");
+@import url("about.css");
+@import url("intro.css");
+@import url("sections.css");
+@import url("timeline.css");
+@import url("case-studies.css");
+@import url("tools-platforms.css");
+@import url("tutorials-resources.css");
+@import url("inspiring-examples.css");
+
+/* Sets the base font size and line height, and specifies the font family for the entire document */
+body, h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
 }
 
-/* Styling for light theme */
-.light-theme {
+/* Removes the default list style and padding from unordered lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Sets the color and text decoration for all links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Defines the styles for the light theme */
+.light-theme,
+.light-theme header {
   background-color: #fff;
   color: #333;
 }
 
-/* Styling for dark theme */
-.dark-theme {
-  background-color: #333;
-  color: #fff;
+/* Defines the styles for the dark theme */
+.dark-theme,
+.dark-theme header {
+  background-color: #444;
+  color: #f1f1f1;
 }
 
-/* Container for centering and limiting the width of content */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* Defines the styles for the theme toggle button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-/* Typography */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.75rem;
-  }
-  
-  /* Add additional styles for h4, h5, and h6 as needed */
-  
-  
+/* Defines the styles for the icon inside the theme toggle button */
+.theme-toggle i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}

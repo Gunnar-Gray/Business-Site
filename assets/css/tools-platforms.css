@@ -1,2 +1,66 @@
-/*tools-platforms.css*/
- 
+/* Style for tools and platforms container */
+.tools-platforms {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Style for tools and platforms header */
+  .tools-platforms h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Dark theme styles for tools and platforms header */
+  .dark-theme .tools-platforms h2 {
+    color: #f1f1f1;
+  }
+  
+  /* Style for tools and platforms list */
+  .tools-platforms ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Style for tools and platforms list items */
+  .tools-platforms li {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    width: calc(33% - 1rem);
+    margin-bottom: 1rem;
+  }
+  
+  /* Dark theme styles for tools and platforms list items */
+  .dark-theme .tools-platforms li {
+    background-color: #666;
+    color: #f1f1f1;
+  }
+  
+  /* Style for tools and platforms list item header */
+  .tools-platforms li h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #333;
+  }
+  
+  /* Dark theme styles for tools and platforms list item header */
+  .dark-theme .tools-platforms li h3 {
+    color: #f1f1f1;
+  }
+  
+  /* Style for tools and platforms list item paragraph */
+  .tools-platforms li p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Dark theme styles for tools and platforms list item paragraph */
+  .dark-theme .tools-platforms li p {
+    color: #f1f1f1;
+  }
+  

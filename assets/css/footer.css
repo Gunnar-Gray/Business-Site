@@ -1,19 +1,55 @@
-/*footer.css*/
+/* footer.css */
+
+/* Footer styles */
 footer {
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-footer .social-icons {
-    display: flex;
-    gap: 1rem;
+/* Footer links */
+footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-footer .social-icons a {
-    color: #fff;
-    text-decoration: none;
+/* Footer links hover */
+footer a:hover {
+  color: #535252;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Social icons spacing */
+.social-icons a {
+  margin-left: 0.5rem;
+}
+
+/* Responsive styles for the footer at screen size 768 pixels or less */
+@media screen and (max-width: 768px) {
+  /* Footer responsiveness */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Social icons spacing on mobile */
+  .social-icons {
+    margin-top: 1rem;
+  }
+}
+
+/* Update background and text color for dark-theme */
+.dark-theme footer {
+  background-color: #444;
+  color: #f1f1f1;
 }

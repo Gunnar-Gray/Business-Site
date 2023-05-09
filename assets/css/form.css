@@ -1,2 +1,73 @@
-/*form.css*/
- 
+/* form.css */
+
+/* Main container styling for the form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f8f8; /* Add a light background color for better contrast */
+  border-radius: 5px; /* Add border radius for a smoother appearance */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1); /* Add a subtle box shadow for depth */
+}
+
+/* Form input and textarea styling */
+.form-container input, .form-container textarea {
+  padding: 12px 16px; /* Increase padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none; /* Remove default browser outline */
+}
+
+.form-container input:focus, .form-container textarea:focus {
+  border-color: #333; /* Change border color on focus for better emphasis */
+}
+
+/* Form label styling */
+.form-container label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem; /* Add margin for better spacing */
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Form submit button styling */
+.form-container button[type="submit"] {
+  padding: 12px 24px; /* Increase padding for better spacing */
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Form submit button hover styling */
+.form-container button[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Update color and background for dark-theme */
+.dark-theme .form-container {
+  background-color: #444; /* Use a darker shade of gray for better contrast */
+}
+
+.dark-theme .form-container label {
+  color: #f1f1f1;
+}
+
+.dark-theme .form-container button[type="submit"] {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.dark-theme .form-container button[type="submit"]:hover {
+  background-color: #fff;
+}

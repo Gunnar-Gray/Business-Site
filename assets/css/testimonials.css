@@ -1,39 +1,72 @@
-/*testimonials.css */
+/* Testimonials section styles */
 .testimonials {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  blockquote {
-    font-size: 1.25rem;
-    color: #666;
-    margin: 1rem;
-    position: relative;
-  }
-  
-  blockquote img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 1rem;
-  }
-  
-  blockquote p {
-    font-style: italic;
-    margin-bottom: 1rem;
-  }
-  
-  blockquote cite {
-    font-size: 1rem;
-    font-style: normal;
-    color: #333;
-  }
-  
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  transition: background-color 0.3s; /* Add transition for smoother background color changes */
+}
+
+/* Update background color for dark-theme */
+.dark-theme .testimonials {
+  background-color: #444;
+}
+
+/* Style for testimonials heading */
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update heading color for dark-theme */
+.dark-theme .testimonials h2 {
+  color: #f1f1f1;
+}
+
+/* Style for blockquote */
+blockquote {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 1rem;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update blockquote color for dark-theme */
+.dark-theme blockquote {
+  color: #f1f1f1;
+}
+
+/* Style for blockquote image */
+blockquote img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Style for blockquote paragraph */
+blockquote p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update blockquote paragraph color for dark-theme */
+.dark-theme blockquote p {
+  color: #f1f1f1;
+}
+
+/* Style for blockquote cite */
+blockquote cite {
+  font-size: 1rem;
+  font-style: normal;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update blockquote cite color for dark-theme */
+.dark-theme blockquote cite {
+  color: #f1f1f1;
+}

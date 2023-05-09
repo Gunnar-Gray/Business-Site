@@ -1,54 +1,100 @@
-/* Set font-family, line-height and transition for background-color */
-body {
-  font-family: Arial, sans-serif;
-  transition: background-color .3s;
-  line-height: 1.6;
-}
-
-/* Set a maximum width for the content container, center it, and set padding */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Light theme styling: set background color to white and text color to dark grey */
+/* Light theme styles */
 .light-theme {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #333;
 }
 
-/* Dark theme styling: set background color to dark grey and text color to white */
+/* Dark theme styles */
 .dark-theme {
-  background-color: #333;
+  background-color: #444;
   color: #f1f1f1;
 }
 
-/* Style for theme toggle button */
-#theme-toggle {
-  border: none;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+/* Set background color and text color for section elements in light theme */
+.light-theme section {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Set background color and text color for section elements in dark theme */
+.dark-theme section {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Global body styles */
+body {
   font-size: 16px;
-  margin: -9px 20px;
+  transition: background-color .3s; /* Transition for smooth background-color changes */
+  line-height: 1.6;
+}
+
+/* Add transitions for section elements to have smooth background-color and color changes */
+section {
+  transition: background-color .3s, color .3s;
+}
+
+/* Style for theme toggle container */
+.theme-toggle {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  background-color: inherit;
-  /* Add smooth transition for background-color and color */
-  transition: background-color 0.3s, color 0.3s;
+  transition: transform 0.3s; /* Transition for smooth rotation */
 }
 
-/* Style for nav links */
-nav ul li a {
+/* Rotate the theme toggle container when in dark theme */
+.theme-toggle.dark-theme {
+  transform: rotate(180deg);
+}
+
+/* Style for theme toggle icon */
+.theme-toggle i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+/* theme.css: Contains global theme styles and variables */
+:root {
+  --main-color: #c0c0c0;
+  --secondary-color: #242423;
+  --text-color: #333;
+  --background-color: #fff;
+  --accent-color: #7c7c7c;
+  --font-family-main: 'Roboto', sans-serif;
+  --font-family-secondary: 'Montserrat', sans-serif;
+}
+
+/* Global body styles */
+body {
+  font-family: var(--font-family-main);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+}
+
+/* Anchor tag styles */
+a {
+  color: var(--main-color);
   text-decoration: none;
-  color: inherit;
-  padding: 0.5rem;
-  /* Add smooth transition for color on hover */
-  transition: color 0.2s ease-in-out;
 }
 
-/* Style for nav links on hover */
-nav ul li a:hover {
-  color: #343434;
+/* Anchor tag hover styles */
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Light theme styles */
+.light-theme {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+/* Dark theme styles */
+.dark-theme {
+  --text-color: #ccc;
+  --background-color: #242423;
 }

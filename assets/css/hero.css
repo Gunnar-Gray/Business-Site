@@ -1,20 +1,23 @@
-/*header.css*/
+/* hero.css */
+
+/* Main hero section styling */
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: #333;
+  background-color: #4a90e2;
   color: #fff;
-  padding: 2rem;
-  background-image: url('https://via.placeholder.com/1200x600');
+  background-image: url('https://via.placeholder.com/1200x900');
   background-size: cover;
   background-position: center;
   min-height: 70vh;
+  text-align: center;
+  padding: 4rem 0;
   position: relative;
 }
 
+/* Dark overlay for hero image */
 .hero::before {
   content: '';
   position: absolute;
@@ -22,37 +25,44 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, .6);
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
-  max-width: 1200px;
-}
-
+/* Hero heading styling */
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
+/* Hero subheading styling */
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
+/* Call-to-action button styling */
 .call-to-action {
   display: inline-block;
   padding: 10px 20px;
   background-color: #fff;
   color: #333;
-  text-decoration: none;
   font-size: 1rem;
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 
-.call-to-action:hover {
-  background-color: #eee;
+/* Update background and text color for dark-theme */
+.dark-theme .hero {
+  background-color: #444;
+  color: #f1f1f1;
 }
 
-  

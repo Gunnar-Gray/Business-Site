@@ -1,17 +1,47 @@
+/* about.css */
 .about {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .about p {
-    font-size: 1.25rem;
-    color: #666;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f8f8f8; /* Add a light background color for better contrast */
+}
+
+.about h2 {
+  font-size: 2.5rem; /* Increase font size for better visibility */
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+  font-weight: 700; /* Add font weight for better emphasis */
+  text-transform: uppercase; /* Convert text to uppercase for a more professional look */
+}
+
+.about p {
+  font-size: 1.25rem;
+  color: #666;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+  line-height: 1.8; /* Improve readability by increasing line-height */
+  text-align: justify; /* Justify text for better alignment */
+  max-width: 800px; /* Limit the width of the text for better readability */
+  margin: 0 auto; /* Center the text block */
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover; /* Ensure the image maintains aspect ratio */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Update color for dark-theme */
+.dark-theme .about {
+  background-color: #222; /* Add a dark background color for better contrast */
+}
+
+.dark-theme .about h2,
+.dark-theme .about p {
+  color: #f1f1f1;
+}

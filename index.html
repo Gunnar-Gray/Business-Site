@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page / Introduction</title>
+    <title>Storytelling Renaissance</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/intro.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/services.css">
-    <link rel="stylesheet" href="assets/css/testimonials.css">
-    <link rel="stylesheet" href="assets/css/team.css">
-    <link rel="stylesheet" href="assets/css/call-to-action-section.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/section.css">
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-</head>
-<body class="light-theme">
+    <script defer src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="light-theme">
     <header>
-      <h1>Storytelling Renaissance</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="evolution.html">Evolution</a></li>
-          <!-- Other nav links -->
+      <div class="container">
+        <div class="logo">
+          <h1><a href="/">Storytelling Renaissance</a></h1>
+        </div>
+        <nav class="navbar" aria-label="Main Navigation">
+          <ul>
+            <li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
+            <li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
+            <li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
+            <li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
+            <li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
+            <li><a href="about.html" aria-label="Link to About page">About</a></li>
+            <li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
+          </ul>
+          <ul>
+          <li>
+            <button class="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <button class="sidebar-toggle" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav class="sidebar-menu">
+      <ul>
+        <li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
+        <li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
+        <li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
+        <li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
+        <li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
+        <li><a href="about.html" aria-label="Link to About page">About</a></li>
+        <li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
+        <li>
+            <button class="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
         </ul>
       </nav>
-      <div class="theme-toggle">
-        <span>Toggle theme</span>
-        <i class="fas fa-adjust"></i>
+    <main>
+      <section class="hero">
+        <img src="assets/images/hero.jpg" alt="A person holding a tablet displaying a story" class="hero-image">
+        <div class="hero-text">
+          <h1>Welcome to the Digital Renaissance</h1>
+         <p>Discover the power of storytelling in the digital age and join our community of storytellers.</p>
+          <a href="#" class="call-to-action">Learn More</a>
+        </div>
+      </section>
+      <section class="about">
+        <h2>The Power of Stories</h2>
+        <p>Stories have always been at the heart of human culture, shaping our values and connecting us on a deeper level. In this digital age, it's more important than ever to share your unique story online and engage with your audience. Our team at Storytelling Renaissance is dedicated to helping you craft a cohesive narrative that incorporates strong typography, interesting characters, and an engaging plot.</p>
+      </section>  <section class="services">
+    <h2>Our Storytelling Services</h2>
+    <div class="services-list">
+      <figure class="service">
+        <img src="assets/images/digital_storytelling.jpg" alt="A person using a laptop for digital storytelling">
+        <figcaption>A person using a laptop for digital storytelling</figcaption>
+        <h3>Digital Storytelling</h3>
+        <p>We help you craft engaging digital narratives that captivate your audience and create a lasting impact.</p>
+      </figure>
+      <figure class="service">
+        <img src="assets/images/brand_development.jpg" alt="Brand development meeting with a team">
+        <figcaption>Brand development meeting with a team</figcaption>
+        <h3>Brand Development</h3>
+        <p>We guide you in defining your brand's story and weaving it into every aspect of your online presence.</p>
+      </figure>
+      <figure class="service">
+        <img src="assets/images/content_strategy.jpg" alt="A person working on content strategy on a tablet">
+        <figcaption>A person working on content strategy on a tablet</figcaption>
+        <h3>Content Strategy</h3>
+        <p>Our team of experts works with you to create compelling content that showcases your story and drives engagement.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Success Stories</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <img src="assets/images/testimonial_1.jpg" alt="A happy client giving a testimonial">
+        <p>"Thanks to their expertise, our story now resonates with our audience like never before. Our online presence has never been stronger."</p>
+        <cite>- Satisfied Client</cite>
       </div>
-      <div class="sidebar">
-        <i class="fas fa-bars"></i>
-        <ul class="sidebar-menu">
-            <li><a href="evolution.html">Evolution</a></li>
-            <li><a href="impact.html">Impact</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="tutorials.html">Tutorials</a></li>
-            <li><a href="examples.html">Examples</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+      <!-- Add more testimonials as needed -->
+    </div>
+  </section>
 
-    <main class="container">
-        <section class="hero">
-            <img src="https://via.placeholder.com/1200x600" alt="Hero image" class="hero-image">
-            <h1>Welcome to the Digital Renaissance</h1>
-            <p>It's time to share your story with the world.</p>
-            <a href="#" class="call-to-action">Learn More</a>
-        </section>
+  <section class="team">
+    <h2>Meet the Storytellers</h2>
+    <div class="team-list">
+      <article class="team-member">
+        <img src="assets/images/team_member_1.jpg" alt="Photo of Storyteller Name, Role / Position">
+        <h3>Storyteller Name</h3>
+        <p>Role / Position</p>
+      </article>
+      <!-- Add more team members as needed -->
+    </div>
+  </section>
 
-        <section class="about">
-            <h2>The Power of Stories</h2>
-            <p>Stories have always been an integral part of human history, shaping our culture and connecting us on a deeper level. In this new age of technology, it's more important than ever to share your unique story online.</p>
-        </section>
+  <section class="call-to-action">
+    <h2>Are You Ready to Join the Digital Renaissance?</h2>
+    <a href="#main-content" class="call-to-action">Let's Tell Your Story</a>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-logo">
+      <h1><a href="/">Storytelling Renaissance</a></h1>
+    </div>
+    <p>&copy; 2023 Storytelling Renaissance. All rights reserved.</p>
+<nav class="footer-nav" aria-label="Footer Navigation">
+<ul>
+<li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
+<li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
+<li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
+<li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
+<li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
+<li><a href="about.html" aria-label="Link to About page">About</a></li>
+<li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
+</ul>
+</nav>
+<div class="social-media">
+<a href="#" title="Facebook" aria-label="Link to Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" title="Twitter" aria-label="Link to Twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" title="Instagram" aria-label="Link to Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" title="LinkedIn" aria-label="Link to LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</footer>
+<script type="module" src="assets/js/main.js"></script>
 
-        <section class="services">
-            <h2>Our Storytelling Services</h2>
-            <ul>
-                <li>
-                    <img src="https://via.placeholder.com/350x200" alt="Digital Storytelling">
-                    <h3>Digital Storytelling</h3>
-                    <p>We help you craft engaging digital narratives that captivate your audience and create a lasting impact.</p>
-                </li>
-                <li>
-                    <img src="https://via.placeholder.com/350x200" alt="Brand Development">
-                    <h3>Brand Development</h3>
-                    <p>We guide you in defining your brand's story and weaving it into every aspect of your online presence.</p>
-                </li>
-                <li>
-                    <img src="https://via.placeholder.com/350x200" alt="Content Strategy">
-                    <h3>Content Strategy</h3>
-                    <p>Our team of experts works with you to create compelling content that showcases your story and drives engagement.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="testimonials">
-            <h2>Success Stories</h2>
-            <blockquote>
-                <img src="https://via.placeholder.com/100x100" alt="Testimonial">
-                <p>"Thanks to their expertise, our story now resonates with our audience like never before. Our online presence has never been stronger."</p>
-<cite>- Satisfied Client</cite>
-</blockquote>   <section class="team">
-            <h2>Meet the Storytellers</h2>
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150x150" alt="Team Member Photo">
-                <h3>Storyteller Name</h3>
-                <p>Role / Position</p>
-            </div>
-            <!-- Add more team members as needed -->
-        </section>
-
-        <section class="call-to-action-section">
-            <h2>Are You Ready to Join the Digital Renaissance?</h2>
-            <a href="contact.html" class="call-to-action">Let's Tell Your Story</a>
-        </section>
-    </main>
-    
-    <footer>
-        <!-- Add your footer content and links here -->
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/footer.js"></script>
-    <script src="assets/js/theme.js"></script>
 </body>
 </html>
-
-

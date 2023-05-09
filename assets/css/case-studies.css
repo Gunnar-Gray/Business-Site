@@ -1,1 +1,82 @@
-/* case studies.css */
+/* case-studies.css */
+
+/* Style for case studies container */
+.case-studies {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f8f8; /* Add a light background color for better contrast */
+}
+
+/* Style for case studies header */
+.case-studies h2 {
+  font-size: 2.5rem; /* Increase font size for better visibility */
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 700; /* Add font weight for better emphasis */
+  text-transform: uppercase; /* Convert text to uppercase for a more professional look */
+}
+
+/* Dark theme styles for case studies header */
+.dark-theme .case-studies {
+  background-color: #222; /* Add a dark background color for better contrast */
+}
+
+.dark-theme .case-studies h2 {
+  color: #f1f1f1;
+}
+
+/* Style for case studies list */
+.case-studies ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for case studies list items */
+.case-studies li {
+  background-color: #ffffff; /* Use a white background color for better contrast */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  width: calc(33% - 1rem);
+  margin-bottom: 1rem;
+  transition: transform 0.3s; /* Add transition for smooth scaling effect */
+}
+
+.case-studies li:hover {
+  transform: scale(1.05); /* Add a scaling effect on hover */
+}
+
+/* Dark theme styles for case studies list items */
+.dark-theme .case-studies li {
+  background-color: #444; /* Use a darker shade of gray for better contrast */
+  color: #f1f1f1;
+}
+
+/* Style for case studies list item header */
+.case-studies li h3 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  color: #333;
+}
+
+/* Dark theme styles for case studies list item header */
+.dark-theme .case-studies li h3 {
+  color: #f1f1f1;
+}
+
+/* Style for case studies list item paragraph */
+.case-studies li p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5; /* Improve readability by increasing line-height */
+  text-align: left; /* Align text to left for better readability */
+}
+
+/* Dark theme styles for case studies list item paragraph */
+.dark-theme .case-studies li p {
+  color: #f1f1f1;
+}

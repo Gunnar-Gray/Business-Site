@@ -1,34 +1,62 @@
-/*team.css*/
+/* Team section styles */
 .team {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .team h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .team-member {
-    display: inline-block;
-    margin: 1rem;
-  }
-  
-  .team-member img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .team-member h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .team-member p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s; /* Add transition for smoother background color changes */
+}
+
+/* Update background color for dark-theme */
+.dark-theme .team {
+  background-color: #444;
+}
+
+/* Style for team section heading */
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update team section heading color for dark-theme */
+.dark-theme .team h2 {
+  color: #f1f1f1;
+}
+
+/* Style for team member container */
+.team-member {
+  display: inline-block;
+  margin: 1rem;
+}
+
+/* Style for team member image */
+.team-member img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Style for team member name */
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update team member name color for dark-theme */
+.dark-theme .team-member h3 {
+  color: #f1f1f1;
+}
+
+/* Style for team member role */
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+  transition: color 0.3s; /* Add transition for smoother color changes */
+}
+
+/* Update team member role color for dark-theme */
+.dark-theme .team-member p {
+  color: #f1f1f1;
+}
