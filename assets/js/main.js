@@ -1,18 +1,18 @@
-import initHeader from "./assets/js/header.js";
-import initHero from "./assets/js/hero.js";
-import initFooter from "./assets/js/footer.js";
-import initTheme from "./assets/js/theme.js";
-import initIntro from "./assets/js/intro.js";
-import initAbout from "./assets/js/about.js";
-import initTestimonials from "./assets/js/testimonials.js";
-import initPortfolio from "./assets/js/portfolio.js";
-import initContact from "./assets/js/contact.js";
-import initTimeline from "./assets/js/timeline.js";
-import initCaseStudies from "./assets/js/case-studies.js";
-import initToolsPlatforms from "./assets/js/tools-platforms.js";
-import initTutorialsResources from "./assets/js/tutorials-resources.js";
-import initInspiringExamples from "./assets/js/inspiring-examples.js";
-
+import initHeader from "./header.js";
+import initHero from "./hero.js";
+import initFooter from "./footer.js";
+import initTheme from "./theme.js";
+import initIntro from "./intro.js";
+import initAbout from "./about.js";
+import initTestimonials from "./testimonials.js";
+import initPortfolio from "./portfolio.js";
+import initContact from "./contact.js";
+import initTimeline from "./timeline.js";
+import initCaseStudies from "./case-studies.js";
+import initToolsPlatforms from "./tools-platforms.js";
+import initTutorialsResources from "./tutorials-resources.js";
+import initImageScroller from "./imageScroller.js";
+import initInspiringExamples from "./inspiring-examples.js";
 
 // Load all modules
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,5 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
   initCaseStudies();
   initToolsPlatforms();
   initTutorialsResources();
+  initImageScroller();
   initInspiringExamples();
 });

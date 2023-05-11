@@ -5,6 +5,12 @@
   transition: background-color 0.3s; /* Add transition for smoother background color changes */
 }
 
+.team-member img:hover {
+  filter: brightness(90%);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 /* Update background color for dark-theme */
 .dark-theme .team {
   background-color: #444;

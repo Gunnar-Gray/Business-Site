@@ -19,7 +19,7 @@
 
 .about p {
   font-size: 1.25rem;
-  color: #666;
+  color: #333;
   transition: color 0.3s; /* Add transition for smoother color changes */
   line-height: 1.8; /* Improve readability by increasing line-height */
   text-align: justify; /* Justify text for better alignment */

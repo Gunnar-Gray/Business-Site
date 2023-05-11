@@ -1,6 +1,8 @@
 /* Imports the necessary CSS files for the webpage */
 @import url("header.css");
 @import url("footer.css");
+@import url("form.css");
+@import url("services.css");
 @import url("theme.css");
 @import url("hero.css");
 @import url("portfolio.css");
@@ -8,12 +10,15 @@
 @import url("contact.css");
 @import url("about.css");
 @import url("intro.css");
+@import url("team.css");
 @import url("sections.css");
 @import url("timeline.css");
+@import url("call-to-action-section.css");
 @import url("case-studies.css");
 @import url("tools-platforms.css");
 @import url("tutorials-resources.css");
 @import url("inspiring-examples.css");
+@import url("sidebar.css");
 
 /* Sets the base font size and line height, and specifies the font family for the entire document */
 body, h1, h2, h3, h4, h5, h6 {

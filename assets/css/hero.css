@@ -48,18 +48,6 @@
   z-index: 1;
 }
 
-/* Call-to-action button styling */
-.call-to-action {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #333;
-  font-size: 1rem;
-  border-radius: 4px;
-  position: relative;
-  z-index: 1;
-}
-
 /* Update background and text color for dark-theme */
 .dark-theme .hero {
   background-color: #444;

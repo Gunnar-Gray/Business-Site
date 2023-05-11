@@ -1,29 +1,42 @@
+/* hero.css */
+.hero-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
 /* call-to-action.css */
-.call-to-action {
+.main-cta {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #4CAF50;
+  background-color: #b2b2b4;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.call-to-action:hover {
-  background-color: #3F9142;
-  color: #f1f1f1;
+.main-cta:hover {
+  background-color: #121212;
+  color: #f9f9f9;
+  transform: scale(1.05); /* Interactivity: Button will slightly increase in size when hovered */
 }
 
 /* Call to action section in main content */
-.main .call-to-action-section {
+.main .main-cta-section {
   padding: 2rem;
   background-color: #f4f4f4;
-  text-align: center;
+  text-align: center; /* Center the CTA button */
   transition: background-color 0.3s; /* Add transition for smoother background color changes */
 }
 
-.main .call-to-action-section h2 {
+.main .main-cta-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
@@ -31,20 +44,21 @@
 }
 
 /* Update color and background for dark-theme */
-.dark-theme .call-to-action {
-  background-color: #3F9142;
+.dark-theme .main-cta {
+  background-color: #28a745;
   color: #f1f1f1;
 }
 
-.dark-theme .call-to-action:hover {
-  background-color: #36803A;
+.dark-theme .main-cta:hover {
+  background-color: #218838;
   color: #ffffff;
+  transform: scale(1.05);
 }
 
-.dark-theme .main .call-to-action-section {
-  background-color: #444;
+.dark-theme .main .main-cta-section {
+  background-color: #343a40;
 }
 
-.dark-theme .main .call-to-action-section h2 {
+.dark-theme .main .main-cta-section h2 {
   color: #f1f1f1;
 }

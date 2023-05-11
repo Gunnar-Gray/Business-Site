@@ -8,40 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <script defer src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1ov2PT4+whx4p4p9WXv4lQ8p3U0U3zqG1+I4sZ" crossorigin="anonymous">
   </head>
   <body class="light-theme">
     <header>
       <div class="container">
         <div class="logo">
-          <h1><a href="/">Storytelling Renaissance</a></h1>
+          <h1><a href="/"></a></h1>
         </div>
         <nav class="navbar" aria-label="Main Navigation">
           <ul>
-            <li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
-            <li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
-            <li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
-            <li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
-            <li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
-            <li><a href="about.html" aria-label="Link to About page">About</a></li>
-            <li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
+            <li class="nav-item"><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
+            <li class="nav-item"><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
+            <li class="nav-item"><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
+            <li class="nav-item"><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
+            <li class="nav-item"><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
+            <li class="nav-item"><a href="about.html" aria-label="Link to About page">About</a></li>
+            <li class="nav-item"><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
           </ul>
-          <ul>
-          <li>
-            <button class="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-              <i class="fas fa-adjust"></i>
-            </button>
-          </li>
-        </ul>
+        </nav>
+        <div class="theme-switch-container desktop-only">
+          <label class="theme-switch" for="theme-toggle">
+            <span class="toggle-label"></span>
+            <input type="checkbox" id="theme-toggle" class="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            <div class="slider round"></div>
+          </label>
+        </div>
         </nav>
         <div class="hamburger-menu">
-            <button class="sidebar-toggle" title="Toggle Sidebar" aria-label="Toggle Sidebar">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
+          <button class="sidebar-toggle" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-      </header>
-      <nav class="sidebar-menu">
+      </div>
+    </header>
+    <nav class="sidebar-menu">
+      <div class="sidebar-close">
+        <i class="fas fa-times" title="Close Sidebar" aria-label="Close Sidebar"></i>
+      </div>
+      <div class="theme-switch-container">
+        <label class="theme-switch" for="theme-toggle-sidebar">
+          <span class="toggle-label"></span>
+          <input type="checkbox" id="theme-toggle-sidebar" class="theme-toggle-sidebar" title="Toggle Theme" aria-label="Toggle Theme">
+          <div class="slider round"></div>
+        </label>
+      </div>
       <ul>
         <li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
         <li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
@@ -50,20 +61,16 @@
         <li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
         <li><a href="about.html" aria-label="Link to About page">About</a></li>
         <li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
-        <li>
-            <button class="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-              <i class="fas fa-adjust"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
+      </ul>
+    </nav>
     <main>
+     
       <section class="hero">
         <img src="assets/images/hero.jpg" alt="A person holding a tablet displaying a story" class="hero-image">
         <div class="hero-text">
           <h1>Welcome to the Digital Renaissance</h1>
-         <p>Discover the power of storytelling in the digital age and join our community of storytellers.</p>
-          <a href="#" class="call-to-action">Learn More</a>
+          <p>Discover the power of storytelling in the digital age and join our community of storytellers.</p>
+          <a href="#" class="hero-cta">Learn More</a>
         </div>
       </section>
       <section class="about">
@@ -119,35 +126,37 @@
 
   <section class="call-to-action">
     <h2>Are You Ready to Join the Digital Renaissance?</h2>
-    <a href="#main-content" class="call-to-action">Let's Tell Your Story</a>
+    <a href="#main-content" class="main-cta">Let's Tell Your Story</a>
   </section>
 </main>
 <footer>
-  <div class="container">
+  <div class="container footer-container">
     <div class="footer-logo">
-      <h1><a href="/">Storytelling Renaissance</a></h1>
+      <h2><a href="/">Storytelling Renaissance</a></h2>
+    </div>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <ul>
+        <li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
+        <li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
+        <li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
+        <li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
+        <li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
+        <li><a href="about.html" aria-label="Link to About page">About</a></li>
+        <li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social-media">
+      <a href="#" title="Facebook" aria-label="Link to Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="Twitter" aria-label="Link to Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" title="Instagram" aria-label="Link to Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="LinkedIn" aria-label="Link to LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <p>&copy; 2023 Storytelling Renaissance. All rights reserved.</p>
-<nav class="footer-nav" aria-label="Footer Navigation">
-<ul>
-<li><a href="evolution.html" aria-label="Link to Evolution page">Evolution</a></li>
-<li><a href="impact.html" aria-label="Link to Impact page">Impact</a></li>
-<li><a href="tools.html" aria-label="Link to Tools page">Tools</a></li>
-<li><a href="tutorials.html" aria-label="Link to Tutorials page">Tutorials</a></li>
-<li><a href="examples.html" aria-label="Link to Examples page">Examples</a></li>
-<li><a href="about.html" aria-label="Link to About page">About</a></li>
-<li><a href="contact.html" aria-label="Link to Contact page">Contact</a></li>
-</ul>
-</nav>
-<div class="social-media">
-<a href="#" title="Facebook" aria-label="Link to Facebook"><i class="fab fa-facebook-f"></i></a>
-<a href="#" title="Twitter" aria-label="Link to Twitter"><i class="fab fa-twitter"></i></a>
-<a href="#" title="Instagram" aria-label="Link to Instagram"><i class="fab fa-instagram"></i></a>
-<a href="#" title="LinkedIn" aria-label="Link to LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-</div>
-</div>
+  </div>
 </footer>
+
 <script type="module" src="assets/js/main.js"></script>
+<script src="https://kit.fontawesome.com/4580e10ed6.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

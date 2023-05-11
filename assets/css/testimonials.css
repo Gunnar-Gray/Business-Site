@@ -6,6 +6,14 @@
   transition: background-color 0.3s; /* Add transition for smoother background color changes */
 }
 
+.testimonial p::before {
+  content: "“";
+  font-size: 2em;
+  color: #333;
+  line-height: 0;
+  vertical-align: middle;
+}
+
 /* Update background color for dark-theme */
 .dark-theme .testimonials {
   background-color: #444;

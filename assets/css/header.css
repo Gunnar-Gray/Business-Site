@@ -1,4 +1,12 @@
 /* Styles for the header element */
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the header element */
 header {
   position: sticky;
   top: 0;
@@ -6,171 +14,240 @@ header {
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 0;
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Styles for the navbar and its unordered list */
-  .navbar,
-  .navbar ul {
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the container element */
+.container {
   display: flex;
-  }
-  
-  /* Styles for the navbar itself */
-  .navbar {
+  justify-content: space-between;
   align-items: center;
-  }
-  
-  /* Styles for the navbar unordered list */
-  .navbar ul {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for the logo element */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Styles for the main navigation */
+.navbar {
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  }
-  
-  /* Styles for the navbar list items */
-  .navbar li {
-  margin-left: 1rem;
-  }
-  
-  /* Styles for the navbar links */
-  .navbar a {
-  color: #333;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 1.5rem;
+  display: inline;
+}
+
+
+.nav-item a {
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-  }
-  
-  /* Styles for the navbar links when hovered over */
-  .navbar a:hover {
-  color: #a2c5e3;
-  }
-  
-  /* Styles for the theme toggle button */
-  .theme-toggle {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: transform .3s;
-  }
-  
-  /* Styles for the theme toggle button icon */
-  .theme-toggle i {
-  font-size: 1.2rem;
-  margin-left: .5rem;
   color: #333;
-  transition: color 0.3s;
-  }
-  
-  /* Styles for the button and section elements */
-  .theme-toggle button,
-  section {
-  transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Styles for the theme toggle button icon and theme when in dark mode */
-  .dark-theme .theme-toggle i,
-  .theme-toggle.dark-theme {
-  transform: rotate(180deg);
-  }
-  
-  /* Styles for the sidebar */
-  .sidebar {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: #555;
+} 
+
+.nav-item a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Styles for the theme-switch-container element */
+.theme-switch-container {
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.theme-switch {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Styles for the hamburger-menu element */
+.hamburger-menu {
   display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+/* Styles for hiding the theme toggle switch on mobile */
+.desktop-only {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
   }
-  
-  /* Styles for the sidebar menu */
-  .sidebar-menu {
+}
+/* Styles for the sidebar-menu element */
+.sidebar-menu {
+  display: none;
+}
+
+.sidebar-menu {
+  display: block;
   position: fixed;
   top: 0;
   left: -100%;
+  width: 80%;
   height: 100%;
-  width: 200px;
-  background-color: #333;
-  transition: left 0.3s;
-  z-index: 999;
-  }
-  
-  /* Styles for the sidebar menu unordered list */
-  .sidebar-menu ul {
-  margin: 0;
-  padding: 1rem 0;
-  }
-  
-  /* Styles for the sidebar menu list items */
-  .sidebar-menu li {
-  padding: 0.5rem 1rem;
-  }
-  
-  /* Styles for the sidebar menu links */
-  .sidebar-menu a {
-  color: #f1f1f1;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-  }
-  
-  /* Styles for the sidebar menu links when hovered over */
-  .sidebar-menu a:hover {
-  color: #fff;
-  }
-  
-  /* Styles for the open sidebar */
-  .sidebar.open {
-  display: block;
-  }
-  
-  /* Styles for the sidebar menu when open */
-  .sidebar.open~.sidebar-menu {
-  left: 0;
-  }
-  
-  /* Media query for screen width less than or equal to 768px /
-  @media screen and (max-width: 768px) {
-  / Hide navbar /
-  .navbar {
-  display: none;
-  }
-  / Display sidebar and style cursor */
-  .sidebar {
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  transition: left 0.3s ease;
+}
+
+.sidebar-menu ul {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-menu ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
   cursor: pointer;
+}
+
+/* Light theme styles */
+.light-theme {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.light-theme header {
+  background-color: #ffffff;
+}
+
+.light-theme a {
+  color: #333;
+}
+
+.light-theme .theme-switch {
+  color: #333;
+}
+
+/* Dark theme styles */
+.dark-theme {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-theme header {
+  background-color: #333;
+}
+
+.dark-theme a {
+  color: #ffffff;
+}
+
+.dark-theme .theme-switch {
+  color: #ffffff;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
   }
-  
-  /* Change header background color for dark-theme */
-  .dark-theme header {
-  background-color:#333;
+
+  .hamburger-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
   }
-  
-  /* Update color for dark-theme */
-  .dark-theme .navbar a,
-  .dark-theme .theme-toggle i {
-  color: #f1f1f1;
+
+  .sidebar-menu {
+    display: block;
   }
-  
-  /* Update color when hovered for dark-theme */
-  .dark-theme .navbar a:hover {
-  color: #c7c7c7;
+
+  .sidebar-menu.open {
+    left: 0;
   }
-  
-  /* Update background color for the sidebar menu when dark-theme is active */
-  .dark-theme .sidebar-menu {
-  background-color: #2c2c2c;
-  }
-  
-  /* Update color for the sidebar menu links when dark-theme is active */
-  .dark-theme .sidebar-menu a {
-  color: #f1f1f1;
-  }
-  
-  /* Update color when hovered for dark-theme sidebar menu links */
-  .dark-theme .sidebar-menu a:hover {
-  color: #fff;
-  }
-  
+}
+
+/* Styles for the theme toggle switch */
+.theme-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2.5px;
+  bottom: 2.5px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
